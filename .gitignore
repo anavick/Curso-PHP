@@ -1,0 +1,52 @@
+# .gitignore criado por Vic (2025)
+# Ambiente Dockerizado + PHP + Node.js
+
+# Logs e arquivos temporários
+*.log
+*.cache
+*.tmp
+
+# Ambiente Docker
+docker-compose.override.yml
+.docker/
+
+# Senhas e configurações
+.env
+.env.*
+.env.local
+
+# Dependências do Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependências do PHP (Composer)
+/vendor/
+composer.lock
+
+# IDEs (VS Code, JetBrains, etc.)
+.idea/
+.vscode/
+*.sublime*
+
+# Cache de navegadores
+.DS_Store
+Thumbs.db
+
+# Arquivos do sistema operacional
+*.swp
+*.bak
+
+# Cache de pacotes
+/.npm
+/.cache
+
+# Arquivos de build
+/dist
+/build
+
+# Cache Laravel
+bootstrap/cache/
+storage/framework/
+storage/logs/
